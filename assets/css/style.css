@@ -1,0 +1,336 @@
+@charset "UTF-8";
+/*----------------------------------------*/
+/* Default CSS 
+/*----------------------------------------*/
+@import url("htbees://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+:root {
+  /**
+  @font family declaration
+  */
+  --bee-ff-body: 'Roboto', sans-serif;
+  --bee-ff-heading: 'Roboto', sans-serif;
+  --bee-ff-p: 'Roboto', sans-serif;
+  --bee-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --bee-common-white: #ffffff;
+  --bee-common-black: #000;
+  --bee-heading-primary: #000;
+  --bee-grey-1: #F1F1F1;
+  --bee-grey-2: #F5F6F8;
+  --bee-text-body: #000;
+  --bee-text-1: #000;
+  --bee-theme-1: #3D6CE7;
+  --bee-border-1: #000;
+  /**
+  @font weight declaration
+  */
+  --bee-fw-normal: normal;
+  --bee-fw-elight: 200;
+  --bee-fw-light: 300;
+  --bee-fw-regular: 400;
+  --bee-fw-medium: 500;
+  --bee-fw-sbold: 600;
+  --bee-fw-bold: 700;
+  --bee-fw-ebold: 800;
+  --bee-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --bee-fz-body: 14px;
+  --bee-fz-p: 14px;
+  --bee-fz-h1: 40px;
+  --bee-fz-h2: 36px;
+  --bee-fz-h3: 24px;
+  --bee-fz-h4: 20px;
+  --bee-fz-h5: 16px;
+  --bee-fz-h6: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------------------------------
+    typography css start 
+---------------------------------*/
+body {
+  font-family: var(--bee-ff-body);
+  font-size: var(--bee-fz-body);
+  font-weight: normal;
+  color: var(--bee-text-body);
+  line-height: 26px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bee-ff-heading);
+  color: var(--bee-heading-primary);
+  margin-top: 0px;
+  font-weight: var(--bee-fw-sbold);
+  line-height: 1.2;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+h1 {
+  font-size: var(--bee-fz-h1);
+}
+
+h2 {
+  font-size: var(--bee-fz-h2);
+}
+
+h3 {
+  font-size: var(--bee-fz-h3);
+}
+
+h4 {
+  font-size: var(--bee-fz-h4);
+}
+
+h5 {
+  font-size: var(--bee-fz-h5);
+}
+
+h6 {
+  font-size: var(--bee-fz-h6);
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-family: var(--bee-ff-p);
+  font-size: var(--bee-fz-p);
+  font-weight: var(--bee-fw-normal);
+  color: var(--bee-text-body);
+  margin-bottom: 15px;
+  line-height: 26px;
+}
+
+a,
+.btn,
+button,
+span,
+p,
+i,
+input,
+select,
+textarea,
+li,
+img,
+svg path,
+*::after,
+*::before,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button {
+  color: inherit;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+  border: 0;
+}
+
+input {
+  outline: none;
+}
+
+input[type=color] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border-radius: 50%;
+}
+
+*::-moz-selection {
+  background: var(--bee-common-black);
+  color: var(--bee-common-white);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--bee-common-black);
+  color: var(--bee-common-white);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--bee-common-black);
+  color: var(--bee-common-white);
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  color: var(--bee-common-black);
+  font-size: var(--bee-fz-body);
+  opacity: 1;
+}
+
+*::placeholder {
+  color: var(--bee-common-black);
+  font-size: var(--bee-fz-body);
+  opacity: 1;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.section-title h2{
+    font-family: var(--bee-ff-heading);
+    font-size: var(--bee-fz-h2);
+    margin-bottom: 10px;
+}
+.section-title p{
+    font-family: var(--bee-ff-body);
+    font-size: 18px;   
+}
+
+
+.main-logo img{
+    width: 150px;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-family: var(--bee-ff-heading);
+    font-size: 16px;
+    color:var(--bee-common-black) ;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #12B76A;
+}
+
+.banner-area{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.banner-area::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--bee-border-1);
+    opacity: .8;
+}
+.banner-content{
+    z-index:2;
+    position: relative;
+}
+.banner-content h2{
+    font-size: var(--bee-fz-h2);
+    color: var(--bee-common-white);
+}
+.banner-content p{
+    font-size: var(--bee-ff-p);
+    color: var(--bee-common-white);
+}
+
+.primary-btn{
+    font-family: var(--bee-ff-heading);
+    font-weight: var(--bee-fw-medium);
+    background-color: #FFCD33;
+    font-size: 18px;
+    color: var(--bee-common-black);
+    padding: 12px 40px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: .3s all ease-in-out;
+}
+.primary-btn:hover{
+
+    color: var(--bee-common-white);
+    background-color: #101828;
+}
+.button-area{
+    padding: 50px 0;
+}
+.card-area{
+    padding: 50px 0;
+    background-color: #F9F9FA;
+}
+
+.form-container{
+    background-color: #101828;    
+    padding: 50px;
+    margin: auto;
+}
+.form-container button{
+    margin-top: 25px;
+}
+.form-group label{
+    font-family: var(--bee-ff-body);
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--bee-common-white);
+}
+.form-group input{
+    margin-bottom: 10px;
+
+}
+.list-group-section{
+    padding: 50px;
+}
